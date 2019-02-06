@@ -1,0 +1,53 @@
+.poster-item
+    position: relative
+
+.poster-ttl
+    position: absolute
+    top: 20%
+    left: 0px
+    right: 0px
+    text-align: center
+    color: white
+    font-size: 20px
+    padding: 0px 20px
+    font-family: 'Appetite'
+    text-shadow: -1px 0px 13px #000000,-1px 0px 13px #000000
+    font-style: italic
+    font-weight: 400
+    @media(min-width: 768px)
+      font-size: 34px
+    @media(min-width: 992px)
+      padding: 0px 70px
+      font-size: 45px
+      text-align: left
+
+.poster-box > .slick-arrow
+    width: 50px
+    height: 50px
+    z-index: 90
+    @media(min-width: 768px)
+      width: 70px
+      height: 70px
+    @media(min-width: 992px)
+      width: 90px
+      height: 90px
+
+.poster-box > .slick-arrow:before
+    content: ''
+    width: 100%
+    height: 100%
+    display: block
+
+.poster-box > .slick-prev:before
+    background: url('../img/arrow-left.png') center top no-repeat/contain
+
+.poster-box > .slick-next:before
+    background: url('../img/arrow-right.png') center top no-repeat/contain
+
+.poster-box > .slick-prev
+    @media(min-width: 768px)
+      left: -10px  
+
+.poster-box > .slick-next
+    @media(min-width: 768px)
+      right: -10px

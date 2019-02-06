@@ -1,0 +1,192 @@
+header
+    position: relative
+
+.header-top
+    background: #80a40e
+    padding: 10px 0px
+    box-shadow: inset 0px -12px 15px -9px rgba(0,0,0,0.28)
+
+.header-top-adress
+    display: flex
+    align-items: center
+    color: white
+    margin-bottom: 5px
+
+.header-top-adress .icon
+    margin-right: 10px
+    font-size: 20px
+
+.header-top-adress span
+    font-size: 12px
+
+.header-top-work
+    display: flex
+    align-items: center
+    color: white
+
+.header-top-work span
+    font-size: 12px
+
+.header-top-work .icon
+    margin-right: 10px
+    font-size: 20px
+
+.header-top-call
+    padding: 5px 0px
+    display: flex
+    align-items: center
+    color: white
+
+.header-top-call a
+    color: white
+    font-size: 16px
+    margin-right: 10px
+
+.header-top-call .icon
+    margin-right: 10px
+    font-size: 20px
+
+.header-top-nav
+    display: none
+
+.logo
+    width: 100px
+
+.logo-txt
+    display: none
+
+.header-bot-box
+    padding: 5px 0px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.header-bot-work
+    display: none
+
+.header-bot-basket
+    display: none
+
+.header-nav
+    display: none
+
+
+@media(max-width: 767px)
+    .header-mobile-nav
+        list-style-type: none
+        position: absolute
+        height: 100vh
+        left: -100%
+        top: 0px
+        transition: 0.5s
+        background-color: white
+        width: 80%
+        padding: 50px 0px
+        border-right: 1px solid #374202
+        z-index: 99
+    .header-mobile-nav--open
+        left: 0px
+        position: fixed
+    .header-mobile-nav-list li
+        margin-bottom: 5px
+    .header-mobile-nav-list a
+        font-size: 16px
+        color: #374202
+        
+
+@media(min-width: 768px)
+    .header-mobile-nav
+        display: none
+    .header-top
+        padding: 10px 0px
+    .header-top-box
+        display: flex
+        justify-content: space-between
+    .header-top-box 
+        .header-top-work,
+        .header-top-call
+            display: none
+    .header-top-adress
+        margin-bottom: 0px
+    .header-top-adress span
+        font-size: 14px   
+    .header-top-nav
+        display: flex
+        align-items: center
+    .header-top-nav a
+        padding: 0 15px
+        color: white
+        margin: 0px 5px
+        &:hover
+            color: #374202
+    .logo
+        width: 140px
+    .logo-txt
+        display: block
+        font-size: 11px
+        color: #374202
+    .header-bot-work
+        display: flex
+        flex-direction: column
+        align-items: center
+    .header-bot-work a
+        color: black
+        &:hover
+            color: #80a40e
+    .header-bot-basket
+        padding: 5px 3px
+        display: flex
+        background-color: #f7f7f7
+        border-radius: 6px
+    .header-bot-bask-img
+        margin-right: 5px
+    .header-bot-bask-info
+        width: 80px
+        text-align: center
+    .header-bot-bask-count
+        display: inline-block
+        background-color: white
+        text-align: center
+        padding: 5px 10px
+        border-radius: 5px
+        margin-bottom: 5px
+        height: 31px
+        line-height: 23px
+    .header-bot-bask-price
+        background-color: #82a11a 
+        border-radius: 5px
+        padding: 5px
+        color: white
+        text-align: center
+        height: 31px
+        line-height: 23px
+        &:hover
+            background-color: #fa235e
+    .header-nav
+        display: block
+        background-color: #374202
+    .header-nav-list
+        list-style-type: none
+        display: flex
+        justify-content: space-between
+    .header-nav a
+        color: white
+        padding: 10px 5px
+        &:hover
+            background-color: #80a40e
+    .header-bot-work-time,
+    .header-bot-work-phone
+        padding: 3px 0px
+
+
+@media(min-width: 992px)
+    .logo
+        width: 200px
+    .logo-txt
+        font-size: 15px
+    .header-nav-list
+        width: 80%
+        margin: 0 auto
+    .header-nav-list a
+        font-size: 16px
+        padding: 15px 15px

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>new</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="wrapper">
+          <div class="header-top-box">
+            <div class="header-top-call">
+              <div class="icon icon-call"></div><a href="">067-134-56-67</a><a href="">067-134-56-67</a>
+            </div>
+            <div class="header-top-adress">
+              <div class="icon icon-placeholder"></div><span>Мариуполь, пр-т Строителей, 455</span>
+            </div>
+            <div class="header-top-work">
+              <div class="icon icon-time"></div><span>Работаем с 9:00 до 23:00</span>
+            </div>
+            <ul class="header-top-nav">
+              <li><a href="">Условия доставки</a></li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="wrapper">
+          <div class="header-bot-box">
+            <div class="logo-box"><a class="logo" href=""><img src="../img/logo.jpg" alt="logo"></a>
+              <div class="logo-txt">Доставка пиццы в Мариуполе</div>
+            </div>
+            <div class="header-bot-work"><span class="header-bot-work-time">Работаем с 9:00 до 23:00</span><a class="header-bot-work-phone" href="tel:+380067-134-56-67">067-134-56-67</a><a class="header-bot-work-phone" href="tel:+38066-564-77-09">066-564-77-09</a></div>
+            <div class="header-bot-basket">
+              <div class="header-bot-bask-img"><img src="../img/pizza.png" alt="basket"></div>
+              <div class="header-bot-bask-info">
+                <div class="header-bot-bask-count">15</div>
+                <div class="header-bot-bask-price">1500 грн</div>
+              </div>
+            </div>
+            <div class="hamburger hamburger--spin js-hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="wrapper">
+          <div class="header-nav-list">
+            <li><a href="">Новинки</a></li>
+            <li><a href="">Итальянская пицца</a></li>
+            <li><a href="">Напитки</a></li>
+            <li><a href="">Основное меню</a></li>
+            <li><a href="">Акции</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile-nav">
+        <div class="wrapper">
+          <div class="header-mobile-nav-list">
+            <li><a href="">Новинки</a></li>
+            <li><a href="">Итальянская пицца</a></li>
+            <li><a href="">Напитки</a></li>
+            <li><a href="">Основное меню</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="">Условия доставки</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Контакты</a></li>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main-wrap main-wrap-styled">
+      <div class="breadcrumbs">
+        <div class="wrapper">
+          <ul class="breadcrumbs-list">
+            <li><a href="">Главная</a><span>/</span></li>
+            <li>Услуги</li>
+          </ul>
+        </div>
+      </div>
+      <section class="order">
+        <div class="wrapper">
+          <div class="order-box">
+            <div class="order-content">
+              <ul class="order-head">
+                <li class="active"> <a href="">Ввод данных</a><span class="order-head-arrow"></span></li>
+                <li> <a href="">Проверка</a><span class="order-head-arrow"></span></li>
+                <li> <a href="">Подтверждение</a></li>
+              </ul>
+              <div class="order-tab-content" id="order-data">
+                <form>
+                  <div class="order-way"><a class="btn-way" href="">В одну сторону</a><a class="btn-way" href="">В обе стороны</a></div>
+                  <div class="order-location-box">
+                    <select class="select-field" id="order-way-from">
+                      <option>От аэропорта</option>
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-way-to">
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-way-places">
+                      <option>Откуда</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                  </div>
+                  <div class="order-hotel">
+                    <input type="text" name="hotel" placeholder="Адрес или название отеля">
+                  </div>
+                  <div class="order-departure">
+                    <input class="order-departure-field order-departure-field-bg" id="order-time-departure" type="text" placeholder="Дата вылета">
+                    <input class="order-departure-field order-departure-field-bg" id="order-time-arrival" type="text" placeholder="Время прибытия">
+                    <input class="order-departure-field" id="departure-airlines" type="text" placeholder="Номер рейса">
+                  </div>
+                  <div class="order-contact">
+                    <input class="order-contact-field" type="text" name="mame" placeholder="Имя">
+                    <input class="order-contact-field" type="text" name="surname" placeholder="Фамилия">
+                    <input class="order-contact-field" type="text" name="phone" placeholder="Номер телефона">
+                    <input class="order-contact-field" type="text" name="email" placeholder="E-mail">
+                  </div>
+                  <div class="order-places-box">
+                    <select class="select-field" id="order-car-places">
+                      <option>От аэропорта</option>
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-car-child-places">
+                      <option>Аэропорт</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-car-buster">
+                      <option>Откуда</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                    <select class="select-field" id="order-car-small-child-places">
+                      <option>Откуда</option>
+                      <option>От аэропорта</option>
+                      <option>От аэропорта</option>
+                    </select>
+                  </div>
+                  <div class="order-cars">
+                    <input type="radio" id="mercedes_e" name="car" value="mercedes_e" checked="checked">
+                    <label class="order-cars-lbl" for="mercedes_e">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_e.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Е class</h3>
+                    </label>
+                    <input type="radio" id="mercedes_s" name="car" value="mercedes_s">
+                    <label class="order-cars-lbl" for="mercedes_s">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_s.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes S class</h3>
+                    </label>
+                    <input type="radio" id="mercedes_v" name="car" value="mercedes_v">
+                    <label class="order-cars-lbl" for="mercedes_v">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_v.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Vito</h3>
+                    </label>
+                    <input type="radio" id="mercedes_via" name="car" value="mercedes_via">
+                    <label class="order-cars-lbl" for="mercedes_via">
+                      <div class="order-cars-lbl-img"><img src="./img/mercedes_via.png" alt="img"></div>
+                      <h3 class="order-cars-name">Мercedes Viano</h3>
+                    </label>
+                  </div>
+                  <textarea class="order-comment" placeholder="Пожелания"></textarea>
+                  <div class="order-check">
+                    <input id="order-check" type="checkbox">
+                    <label class="order-check-lbl" for="order-check">Квитанция для бухгалтерии</label>
+                  </div>
+                  <input class="btn-order-submit" type="submit" value="Заказать трансфер">
+                </form>
+              </div>
+              <div class="order-tab-content order-tab-content-check" id="order-check">
+                <h3 class="order-tab-content-ttl">Проверьте Ваши данные</h3>
+                <div class="order-info-box">
+                  <div class="order-info-data">  
+                    <div class="order-info-data-field"><span>Ф.И.О: </span><span>Иванов Иван Иванович</span></div>
+                    <div class="order-info-data-field"><span>tel: </span><span>+380670676767</span></div>
+                    <div class="order-info-data-field"><span>email: </span><span>ivaniv.ivan.ibanivich@gmai.com</span></div>
+                    <div class="order-info-data-field order-info-data-field-way">Трансфер в одну сторону</div>
+                  </div>
+                  <div class="order-info-way-box">
+                    <div class="order-info-way-field"><span> <strong>От: </strong></span><span>Аэропорта Ларнаки</span></div>
+                    <div class="order-info-way-field"><span> <strong>До: </strong></span><span>Протарас-Пернера</span></div>
+                    <div class="order-info-way-field order-info-way-field-hotel"><span> <strong>Адрес: </strong></span><span>Гостиница Hilton</span></div>
+                  </div>
+                  <div class="order-info-location-box">
+                    <div class="order-info-location-field order-info-location-field-bg">20/03/18</div>
+                    <div class="order-info-location-field order-info-location-field-bg">20/03/18, 20:35</div>
+                    <div class="order-info-location-field">Рейс: RTYu789</div>
+                  </div>
+                  <div class="order-info-places-box">
+                    <div class="order-info-places-field">Кол-во пассажиров: 5</div>
+                    <div class="order-info-places-field">Детские кресла: 5</div>
+                    <div class="order-info-places-field">Бустер: 1</div>
+                    <div class="order-info-places-field">Кресло младенцу: 0</div>
+                  </div>
+                  <div class="order-info-car">
+                    <div class="order-info-car-ttl">Выбранный вами автомобиль</div>
+                    <div class="order-info-car-img"><img src="./img/mercedes_e.png" alt="img"></div>
+                    <div class="order-info-car-name">Мercedes Е class</div>
+                  </div>
+                  <div class="order-info-comment"><strong>Ваши пожелания: </strong>По прилету 3 порции морожена детям и бутылку шампанского.</div>
+                  <div class="order-return-form-box"><a class="order-return-form" href="">< Вернуться к заполнению формы</a></div>
+                  <div class="order-info-price-box">Общая цена трансфера: <span>970 евро</span></div>
+                  <div class="order-info-btn-box"><a class="btn-info-add btn-info-add" href="">Оплптить по приезду</a><a class="btn-info-add btn-info-add-online" href="">Оплптить онлайн*</a></div>
+                </div>
+              </div>
+              <div class="order-tab-content" id="order-confirm">13</div>
+            </div>
+            <div class="order-side">
+              <div class="order-side-ttl">Заказ трансфера</div>
+              <div class="order-side-content">
+                <p>Все трансферы индивидуальные</p>
+                <p>При заказе такси/трансфера в обе стороны скидка 5%</p>
+                <p>Детские кресла, бустеры включены в цену трансфера </p>
+                <p>Время ожидания в аэропорту включено в цену трансфера номер рейса отслеживается нами (не стоит беспокоиться в случае задержки рейса или преждевременной посадки), водитель будет в аэропорту во время посадки самолёта </p>
+                <p>Водитель будет держать в руках табличку при выходе из аэропорта на которой будет написано ваше Имя и Фамилия указанные при заказе трансфера</p>
+              </div>
+              <div class="order-side-btn-box"><a class="btn-order btn-order-way" href=""><span class="icon icon-route"></span><span class="btn-order-txt">Длительность поездки</span></a><a class="btn-order btn-order-donload" href="" download> <span class="icon icon-file"></span><span class="btn-order-txt">Подробный прайс</span></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-box">
+          <div class="footer-promo"><a class="footer-logo" href=""><img src="../img/logo.jpg" alt="logo"></a></div>
+          <ul class="footer-nav">
+            <li><a href="/">Условия доставки</a></li>
+            <li><a href="/">О нас </a></li>
+            <li><a href="/">Контакты</a></li>
+          </ul>
+          <div class="work">
+            <div class="work-ttl">График работы</div>
+            <div class="work-time">c 9:00 до 23:00</div><a class="work-phone" href="">067-134-56-67</a><a class="work-phone" href="">066-564-77-09</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-1.12.4.js">  </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

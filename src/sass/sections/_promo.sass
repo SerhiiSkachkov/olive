@@ -1,0 +1,214 @@
+.promo-box
+    padding: 30px 0px
+
+.promo-ingridients
+    padding: 15px 0px
+
+.promo-gallery
+    background-color: #efefef
+    padding: 24px
+    border-radius: 50%
+    box-shadow: 0 0 5px 5px rgba(0,0,0,.35)
+
+.promo-descr-list
+    padding: 5px 0px
+
+.promo-size
+    padding: 5px 0px 10px
+    width: 150px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+
+.promo-size-link
+  position: relative
+
+.promo-size-link.active:after
+    opacity: 1
+    transform: translateX(-50%) translateY(-50%) scale(1)
+
+.promo-size-link:after 
+    position: absolute
+    top: 23px
+    left: 50%
+    width: 65px
+    height: 65px
+    border: 2px solid rgba(250, 35, 94, 0.47843137254901963)   
+    border-radius: 50%
+    content: ''
+    opacity: 0
+    transition: transform 0.3s, opacity 0.3s
+    transform: translateX(-50%) translateY(-50%) scale(0.2)
+
+.promo-size-link:after 
+    width: 55px
+    height: 55px
+    border-width: 6px
+    transform: translateX(-50%) translateY(-50%) scale(0.8)
+
+.promo-size-link:hover:after,
+.promo-size-link:focus:after 
+        opacity: 1
+        transform: translateX(-50%) translateY(-50%) scale(1)
+
+.promo-weight-list
+    padding: 5px 0px 10px
+    width: 150px
+    margin: 0 auto
+
+.promo-size-link span
+    display: block
+    color: black
+    border-bottom: 1px solid black
+
+.promo-name
+    font-size: 24px
+    text-transform: capitalize
+    text-align: center
+    margin: 10px 0px
+    font-weight: 300
+
+.promo-info-box
+    background-color: #efefef
+    padding: 15px 10px
+    border-radius: 10px
+    text-align: center
+    margin-bottom: 10px
+
+.promo-price
+    width: 150px
+    background-color: white
+    margin: 0 auto
+    font-size:  24px
+    color: #fa235e
+    margin-bottom: 10px
+    font-weight: 300
+    padding: 10px 10px
+    border-radius: 4px
+    border: 1px solid gray
+
+.promo-info
+    text-align: center
+    
+.promo-info .btn-add
+    margin-top: 0px
+
+.btn-add-ingr
+    color: white
+    background-color: #80a507
+    height: 40px
+    font-size: 16px
+    line-height: 30px
+    padding: 5px 15px
+    font-weight: 200
+    border-radius: 20px
+    text-transform: uppercase
+    &:hover
+        box-shadow: 0 0 3px 3px rgba(0,0,0,.25)
+
+.promo-info-field-box
+    display: none
+
+.promo-ingridients-item
+    max-width: 265px
+    margin: 0 auto 30px
+
+.promo-ingridients-img
+    height: 140px
+    position: relative
+
+.promo-ingridients-img img
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+.promo-ingridients-item-box
+    background-color: white
+    border-radius: 10px
+    text-align: center
+    box-shadow: 0 2px 7px 2px rgba(0,0,0,.46)
+    padding: 15px 15px
+
+.promo-ingridients-name
+    font-size: 16px
+    font-weight: 400
+    margin: 10px 0px
+
+.promo-ingridients-price
+    color: gray
+    margin-bottom: 10px
+
+.promo-ingridients-controls
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.promo-ingridients-outp
+    height: 30px
+    width: 60px
+    border-radius: 6px
+    border: 1px solid lightgray
+    text-align: center
+    line-height: 20px
+    padding: 5px 5px
+
+@media(min-width: 540px)
+    .promo-ingridients
+        display: flex
+        justify-content: space-between
+        flex-flow: wrap
+    .promo-ingridients-item
+        width: 50%
+        padding: 0px 5px
+        margin-bottom: 15px
+
+@media(min-width: 768px)
+    .btn-add-ingr
+        height: 40px
+        padding-left: 80px
+        margin-left: -67px
+        border-radius: 5px
+        line-height:  30px
+        padding-right: 20px
+    .promo-info
+        text-align: left
+        margin-left: -97px
+    .promo-box
+        display: flex
+    .promo-gallery
+        margin-top: 10px
+        width: 90%
+        position: relative
+        z-index: 1
+    .promo-info-box
+        padding-left: 55px
+    .promo-name
+        text-align: left
+        padding: 0px 5px
+        margin-bottom: 10px
+
+      
+@media(min-width: 992px)
+    .btn-add-ingr
+        margin-left:  -29px
+        height: 50px
+        line-height: 40px
+        padding-left: 100px
+    .promo-gallery
+        margin-top: 10px
+        width: 55%
+    .promo-info
+        padding-top: 20px
+    .promo-info-box
+        padding-left: 55px
+    .promo-name
+        padding: 0px 15px
+        font-size:  34px
+    .promo-ingridients-item
+        width: 25%
+
+@media(min-width: 1199px)
+  .btn-add-ingr
+      height: 70px
+      line-height: 60px

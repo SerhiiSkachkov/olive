@@ -1,0 +1,203 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+html 
+  -webkit-box-sizing: border-box
+          box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+*, ::after, ::before 
+  -webkit-box-sizing: inherit
+          box-sizing: inherit
+
+.wrapper
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 576px) 
+  .wrapper
+    max-width: 540px 
+
+@media (min-width: 768px) 
+  .wrapper
+    max-width: 720px 
+
+@media (min-width: 992px) 
+  .wrapper
+    max-width: 960px 
+
+@media (min-width: 1200px) 
+  .wrapper
+    max-width: 1030px
+
+body
+    display: block
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+.clearfix:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.main-wrap
+    margin: 0 auto  
+    overflow: hidden
+    
+.hidden
+    display: none
+
+.breadcrumbs
+  padding: 10px 0px
+  
+.breadcrumbs-list
+  display: flex
+  flex-flow: wrap
+
+.breadcrumbs-list li span
+  padding: 0px 3px
+
+.breadcrumbs-list a
+  color: black
+  border-bottom: 1px solid black
+  &:hover
+    color: #fa235e
+    border-bottom: 1px solid #fa235e
+
+@media(min-width: 768px)
+  .breadcrumbs
+    padding: 20px 0px
+  .breadcrumbs-list
+    justify-content: center
+
+@media(min-width: 992px)
+  .breadcrumbs
+    padding: 30px 0px
+
+.work
+    display: flex
+    flex-direction: column
+
+.work-phone
+  color: black
+  padding: 5px 0px
+  
+.btn-add
+    margin-top: -30px
+    display: inline-flex
+    align-items: center
+    overflow: hidden
+    padding: 5px 5px
+    background-color: transparent
+    border: none
+    &:hover
+      .btn-add-rect
+          transform: rotate(-45deg)
+          box-shadow: 0 0 3px 3px rgba(0,0,0,.20)
+      .btn-add-txt
+          animation-name: widthchange
+          animation-duration: 1s
+          animation-timing-function: ease
+          margin-left:  -5px
+          width: 85px
+
+
+.btn-add-rect
+    display: inline-block
+    background-color: #fa235e
+    color: white
+    font-weight: 200
+    font-size: 40px
+    line-height: 50px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    transition: 1s
+    position: relative
+    z-index: 1
+
+.btn-add-txt
+    text-align: left
+    transition: 1s
+    display: inline-block
+    width: 0px
+    background-color: #fa235e
+    color: white
+    font-weight: 400
+    height: 30px
+    line-height: 30px
+    padding-left: 15px
+    margin-left: -20px
+    border-radius: 0px 15px 15px 0px
+
+
+@keyframes widthchange
+    from
+        width: 30px
+        padding-left: 0px
+        margin-left: -20px
+    to
+        padding-left: 15px
+        margin-left: -5px
+        width: 85px
+
+.title
+    font-size: 22px
+    text-align: center
+    margin: 20px 0px
+    text-transform: capitalize
+    font-weight: 300
+    @media(min-width: 768px)
+      font-size: 34px
+
+.about
+    padding: 0px 0px 30px
+
+.about .title
+    margin: 10px 0px
+
+.about-content
+    padding: 20px 0px
+
+.about-content p
+    margin-bottom: 15px
+    font-weight: 300
+
+
+    
+.btn-primary
+    width: 50px
+    height: 50px
+    color: white
+    border-radius: 50%
+    border: 1px solid #fa235e
+    background-color: #fa235e
+    font-size: 30px
+    line-height: 48px
+    text-align: center
+    &:hover
+      background-color: white
+      color: #fa235e
+      box-shadow: 0 0 3px 3px rgba(0,0,0,.2)
+
+.btn-secondary
+    width: 50px
+    height: 50px
+    color: white
+    border-radius: 50%
+    border: 1px solid #374202
+    background-color: #374202
+    font-size: 30px
+    line-height: 48px
+    text-align: center   
+    &:hover
+      background-color: white
+      color: #374202
+      box-shadow: 0 0 3px 3px rgba(0,0,0,.2)
+

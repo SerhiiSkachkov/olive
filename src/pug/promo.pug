@@ -1,0 +1,149 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        
+        include components/header.pug
+
+        main.main-wrap
+            .breadcrumbs
+                .wrapper
+                  ul.breadcrumbs-list
+                    li
+                        a(href="") Главная
+                        span /
+                    li
+                        a(href="") Пицца
+                        span /
+                    li Паперони
+            section.promo
+                .wrapper
+                    .promo-box
+                        .promo-gallery
+                            img(src="./img/main.png", alt="main")
+                        .promo-info
+                            .promo-name паперони
+                            form.promo-info-box(method="post")
+                                ul.promo-descr-list
+                                    li Тесто из цельнозерновой муки, моцарелла, креветки, цукини, чеснок.
+                                    li Отличная пицца для настоящих гурманов
+                                ul.promo-weight-list
+                                    li ВЕС 25 см - 440 грамм
+                                    li ВЕС 35 см - 530 грамм
+                                .promo-size
+                                    a.promo-size-link.active.js-promo-size(href="")
+                                        img(src="./img/size.png", alt="size")
+                                        span 30 см
+                                    a.promo-size-link.js-promo-size(href="")
+                                        img(src="./img/size.png", alt="size")
+                                        span 40 см
+                                .promo-price
+                                    span 147 грн
+                                .promo-info-field-box
+                                    input(type="hidden" name="name" value="paperoni")
+                                    input(type="hidden" name="size" value="30")
+                                    input(type="hidden" name="ingridients" value="")
+                                    input(type="hidden" name="price" value="147")
+                                button.btn-add(type="submit") 
+                                    span.btn-add-rect +
+                                    span.btn-add-txt Заказать
+                            a.btn-add-ingr(href="") + Добавить ингридиенты
+
+                    .promo-ingridients
+                        .promo-ingridients-item
+                            .promo-ingridients-item-box
+                                .promo-ingridients-img
+                                    img(src="./img/promo_ingr_mush.png" alt="ingr")
+                                .promo-ingridients-name Грибы
+                                .promo-ingridients-price 25.00 грн / 50 г
+                                .promo-ingridients-controls
+                                    a.btn-secondary(href="") -
+                                    .promo-ingridients-outp 0
+                                    a.btn-primary(href="") +
+                        .promo-ingridients-item
+                            .promo-ingridients-item-box
+                                .promo-ingridients-img
+                                    img(src="./img/promo_ingr_saus.png" alt="ingr")
+                                .promo-ingridients-name Охотничьи колбаски
+                                .promo-ingridients-price 25.00 грн / 50 г
+                                .promo-ingridients-controls
+                                    a.btn-secondary(href="") -
+                                    .promo-ingridients-outp 0
+                                    a.btn-primary(href="") +
+                        .promo-ingridients-item
+                            .promo-ingridients-item-box
+                                .promo-ingridients-img
+                                    img(src="./img/promo_ingr_chease.png" alt="ingr")
+                                .promo-ingridients-name Сыр пармезан
+                                .promo-ingridients-price 25.00 грн / 50 г
+                                .promo-ingridients-controls
+                                    a.btn-secondary(href="") -
+                                    .promo-ingridients-outp 0
+                                    a.btn-primary(href="") +
+                        .promo-ingridients-item
+                            .promo-ingridients-item-box
+                                .promo-ingridients-img
+                                    img(src="./img/promo_ingr_tomato.png" alt="ingr")
+                                .promo-ingridients-name Томаты
+                                .promo-ingridients-price 25.00 грн / 50 г
+                                .promo-ingridients-controls
+                                    a.btn-secondary(href="") -
+                                    .promo-ingridients-outp 0
+                                    a.btn-primary(href="") +
+            section.product
+                .wrapper
+                    h2.title Смотрите также
+                    .product-box
+                        .product-item
+                            .product-item-img
+                                img(src="./img/product_paper.png")
+                            .product-inform
+                                h3.product-ttl Паперони
+                                .product-descr Перетерті томати, моцарела, салямі пікантна "Пепероні"
+                                .product-price
+                                    span 104 грн
+                            a.btn-add(href="") 
+                                span.btn-add-rect +
+                                span.btn-add-txt Заказать
+                        .product-item
+                            .product-item-img
+                                img(src="./img/product_milano.png")
+                            .product-inform
+                                h3.product-ttl Милано
+                                .product-descr Перетерті томати, моцарела, салямі Мілано
+                                .product-price
+                                    span 104 грн
+                            a.btn-add(href="") 
+                                span.btn-add-rect +
+                                span.btn-add-txt Заказать
+                        .product-item
+                            .product-item-img
+                                img(src="./img/product_americano.png")
+                            .product-inform
+                                h3.product-ttl Американо
+                                .product-descr Перетерті томати, моцарела, кукурудза, ковбаски, картопля фрі
+                                .product-price
+                                    span 104 грн
+                            a.btn-add(href="") 
+                                span.btn-add-rect +
+                                span.btn-add-txt Заказать
+                        .product-item
+                            .product-item-img
+                                img(src="./img/product_chease.png")
+                            .product-inform
+                                h3.product-ttl сырная
+                                .product-descr Тесто из цельнозерновой муки, моцарелла, креветки, цукини, чеснок
+                                .product-price
+                                    span 104 грн
+                            a.btn-add(href="") 
+                                span.btn-add-rect +
+                                span.btn-add-txt Заказать
+        include components/footer.pug                        
+        include components/script.pug
